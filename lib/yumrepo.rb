@@ -32,7 +32,7 @@ module YumRepo
     attr_accessor :cache_path, :cache_expire, :log_level, :cache_enabled
 
     def initialize
-      @cache_path = "#{ENV['HOME']}/.yumrepo/cache/"
+      @cache_path = "/tmp/yumrepo/cache/"
       # Cache expire in seconds
       @cache_expire = 3600
       @cache_enabled = true
